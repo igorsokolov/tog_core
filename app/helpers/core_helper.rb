@@ -62,7 +62,7 @@ module CoreHelper
         end
         profile + text
       end
-    }
+    }.join
   end
   
   def will_paginate_with_i18n(collection, options = {})

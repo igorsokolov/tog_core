@@ -3,7 +3,7 @@ module InterfaceHelper
   def render_flash_messages
     flash.collect{|entry|
       content_tag(:div, entry[1], :class => "notice #{entry[0]}")
-    }
+    }.join
   end
   
   def current_url?(options)
@@ -20,7 +20,7 @@ module InterfaceHelper
     tabs = Tog::Interface.sections(section).tabs
     links = tabs.map do |tab|
       nav_link_to(tab)
-    end.compact
+    end.compact.join
   end
   
   def nav_link_to(tab)
@@ -36,7 +36,7 @@ module InterfaceHelper
       content_tag :ul do
         tabs.collect do |t|
           %{<li#{" class=\"on\"" if current_url?(t[1])}>#{ link_to I18n.t(t[0]), t[1]}</li>}
-        end
+        end.join
       end
     end
   end
