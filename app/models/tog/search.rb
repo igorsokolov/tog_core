@@ -49,7 +49,7 @@ module Search
           RAILS_DEFAULT_LOGGER.warn(<<-WARNING
 
 **************************************************************************************************************************************************
-SEARCH WARNING: The source #{source} should implement a 'self.site_search(query, options={})' method to be available on site-wide searches.
+SEARCH WARNING: The source #{source} should implement a "self.site_search(query, options={})" method to be available on site-wide searches.
 **************************************************************************************************************************************************
 
           WARNING
