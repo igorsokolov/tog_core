@@ -90,7 +90,7 @@ end
 def install_tog_core_plugins    
   quiet_git_install('tog_core', "git://github.com/igorsokolov/tog_core.git") #, TOG_RELEASE )
   quiet_git_install('tog_social', "git://github.com/tog/tog_social.git", TOG_RELEASE )
-  quiet_git_install('tog_mail', "git://github.com/tog/tog_mail.git", TOG_RELEASE )
+  quiet_git_install('tog_mail', "git://github.com/igorsokolov/tog_mail.git") #, TOG_RELEASE )
 
   route "map.routes_from_plugin 'tog_core'"
   puts "* adding tog_core routes to host app... #{"added".green.bold}";
