@@ -1,7 +1,10 @@
 Core
 =====
 
+* !!! Right now only EN locale works with ruby 1.9.1 in this fork. All other locales are disabled.
+
 Tog core module.
+
 
 Included functionality
 ----------------------
